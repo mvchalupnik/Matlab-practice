@@ -5,8 +5,9 @@ function out = recursionpractice()
     goob.b = [3,4];   
     goob.c = [5];
     
-    %Nested For loop alternative: When you want to For loop over each
-    %field of goob but you don't know how many fields goob has in advance
+    %Nested For loop alternative: When you want to create all permuations of gob with each field containing one number 
+    %chosen from the original field arrays of goob. Useful when you don't know how many fields goob has in advance, since
+    %dynamical creation of For loops seems difficult. 
     
     function out = practice2(letter,goob)
         if letter <= length(fields(goob))
